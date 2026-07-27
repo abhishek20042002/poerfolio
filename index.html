@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: rgb(13, 3, 59);
+            color: rgb(255, 255, 255);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+            background-color: rgb(14, 14, 75);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        nav ul li a:hover {
+
+            color: rgb(13, 122, 218);
+            font-size: 0.9rem;
+
+        }
+
+
+        .left {
+            font-size: 24px;
+        }
+
+        .right {
+            font-size: 2rex;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 80px 0;
+
+        }
+
+        .firstSection>div {
+            width: 30%;
+
+
+        }
+
+        .leftSection {
+            /* background-color: red; */
+            font-size: 4.8rex;
+            /* width: 50%; */
+            margin: 90px 0;
+        }
+
+        .leftSection .buttons {
+            padding: 33px 0;
+        }
+
+        .leftSection .btn {
+            background-color: rgb(13, 3, 59);
+            border: 2px solid rgb(216, 216, 218);
+            color: white;
+            width: 200px;
+            padding: 7px;
+            font-size: small;
+            cursor: pointer;
+
+        }
+
+        .leftSection .btn:hover {
+            font-size: small;
+            background-color: white;
+            color: rgb(34, 0, 135);
+
+        }
+
+
+        .rightSection img {
+            /* background-color: red; */
+            width: 80%;
+            margin: 4px 0;
+
+        }
+
+        .purple {
+            color: rgb(6, 6, 236);
+        }
+
+        .text-grey {
+            color: grey;
+        }
+
+        #element {
+            color: rgb(6, 6, 236);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 60vh;
+        }
+
+        .secondSection h1 {
+
+            font-size: 1.8rem;
+        }
+
+        main hr {
+            border: 0;
+            background-color: rgb(6, 6, 236);
+            height: 1px;
+            margin: 40px 80px;
+        }
+
+        .secondSection .box {
+            background-color: white;
+            width: 80vw;
+            height: 1px;
+            margin: 15vh 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+
+            height: 60px;
+            width: 1px;
+            background-color: white;
+            margin: 0 150px;
+            align-items: center;
+            display: flex;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            left: -30px;
+            width: 60px;
+            display: flex;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        /* .vertical-desc {
+
+            position: relative;
+            color: grey;
+            top: 170px;
+            left: -90px;
+            width: 190px;
+            font-size: 7px;
+        } */
+
+        .image-top {
+            width: 30px;
+            position: relative;
+            top: -50px;
+            left: -13px;
+
+        }
+
+        footer {
+            background-color: rgb(14, 14, 75);
+
+
+
+        }
+
+        .footer {
+            display: flex;
+            padding: 100px 100px;
+            align-items: center;
+            justify-content: space-between;
+            height: 60px;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 195px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: grey;
+            padding: 12px 0;
+        }
+
+        .footer-first h3 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+
+
+        }
+
+        .footer-second h3 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+
+
+        }
+
+        .footer-third h3 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+
+
+        }
+
+        .footer ul li {
+            margin: 30px 0;
+            padding: 0 15px;
+            font-size: small;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+
+        .image-insta {
+            width: 23px;
+            position: relative;
+            left: -17px;
+            top: 45px;
+
+        }
+
+        .image-tele {
+            width: 20px;
+            position: relative;
+            left: -17px;
+            top: 42px;
+
+        }
+
+        .image-linked {
+            width: 18px;
+            position: relative;
+            left: -17px;
+            top: 40px;
+
+        }
+
+        .image-locater {
+            width: 25px;
+            position: relative;
+            left: -17px;
+            top: 45px;
+
+        }
+
+        @media screen and (max-width: 1400px) {
+            /* body {
+                 background-color: red; 
+            } */
+
+            .box {
+                flex-direction: column;
+            }
+
+            .secondSection .vertical {
+
+                height: unset;
+            }
+
+            .vertical-title,
+            .vertical-desc {
+                left: 5px;
+            }
+
+            .secondSection .box {
+                width: 70vw;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+           
+
+            .firstSection {
+                flex-direction: column-reverse;
+            }
+
+            .leftSection {
+                width: 100% !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+
+            }
+
+            .rightSection {
+                width: 721px !important;
+                display: flex;
+                justify-content: center;
+            }
+
+            .secondSection {
+                /* max-width: 80vw;
+                margin: auto;
+                height: 80vh; */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .rightSection img {
+                width: 25%;
+                margin-bottom: 70px;
+                position: relative;
+                left: 1vh;
+            }
+
+            .image-top {
+                top: 50px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Abhishek's Portfolio</div>
+            <div class="right">
+
+                <ul>
+
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Skills</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Resume</a></li>
+                    <li><a href="/">Contact Us</a></li>
+
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <div>Hello, My name is <span class="purple">Abhishek</span></div>
+                <div>passionate to be a</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
+
+            </div>
+            <div class="rightSection">
+                <img src="side image.png" alt="">
+            </div>
+
+
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-grey">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">HTML Developer (2018-2020)</div>
+                    <!-- <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore saepe tenetur, quis
+                        consequuntur earum officia neque architecto doloribus.
+                    </div> -->
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="node.png" alt="">
+                    <div class="vertical-title">Node.js Developer (2020-2022)</div>
+                    <!-- <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore saepe tenetur, quis
+                        consequuntur earum officia neque architecto doloribus.
+                    </div> -->
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="stack.png" alt="">
+                    <div class="vertical-title">Full Stack Developer (2023-2025)</div>
+                    <!-- <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore saepe tenetur, quis
+                        consequuntur earum officia neque architecto doloribus.
+                    </div> -->
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="microsoft.png" alt="">
+                    <div class="vertical-title">Currently Working in Microsoft</div>
+                    <!-- <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore saepe tenetur, quis
+                        consequuntur earum officia neque architecto doloribus.
+                    </div> -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Media Links</h3>
+                <ul>
+                    <!-- <img class="image-insta" src="insta.png" alt=""> -->
+                    <li>Instagram</li>
+                    <!-- <img class="image-tele" src="telegram.png" alt=""> -->
+                    <li>Telegram</li>
+                    <!-- <img class="image-linked" src="linkedin.png" alt=""> -->
+                    <li>Linkedin</li>
+
+                </ul>
+            </div>
+            <div class="footer-second">
+                <h3>Know More</h3>
+                <ul>
+                    <li>About Us</li>
+                    <li>Terms & Conditions</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <h3>Reach Us</h3>
+                <ul>
+                    <!-- <img class="image-locater" src="locator.png" alt=""> -->
+                    <li>Prayagraj, Uttar Pradesh</li>
+                    <li>abhisheky12@gmail.com</li>
+                    <li>+91 727XXXXX04</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer-rights">
+            Copyright &#169 www.abhishekportfolio.com | All rights reserved
+        </div>
+
+    </footer>
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Vedio Editor'],
+            typeSpeed: 150,
+        });
+    </script>
+
+</body>
+
+</html>
