@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Resume</title>
+    <style>
+        body {
+            background-color: rgb(224, 224, 234);
+        }
+
+        .cont {
+            border: 3px solid rgb(33, 13, 143);
+            background-color: beige;
+            width: 100vh;
+            height: 100%;
+            margin: 35px auto;
+
+
+        }
+
+        .cont h1 {
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: blueviolet;
+        }
+
+        .first-line {
+            border: 1px solid grey;
+            width: 100%;
+        }
+
+        .cont h4 {
+            text-align: center;
+        }
+
+        .hline {
+            margin: 0 30px;
+        }
+
+        .hline h2 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            color: blueviolet;
+        }
+
+        .line {
+            border: 1px solid blueviolet;
+            width: 100%;
+        }
+
+        p {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: rgb(7, 77, 134);
+        }
+
+        ul li {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: rgb(7, 77, 134);
+        }
+
+        .btn {
+            align-content: center;
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .btn {
+            text-decoration: none;
+            background-color: rgb(14, 5, 54);
+            color: white;
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: blueviolet;
+            color: rgb(14, 5, 54);
+            transition: all 0.5s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="cont">
+        <h1>Resume</h1>
+        <div class="first-line"></div>
+        <div class="multi-section">
+            <div class="section 1">
+                <div class="hline">
+                    <h2>Profile & Personal Details</h2>
+                    <div class="line"></div>
+                    <p>Passionate Frontend Developer with knowledge of HTML, CSS, JavaScript and React. I enjoy creating
+                        responsive and user-freindly websites.</p>
+                    <ul>
+                        <li><b>Name :</b>&nbsp;Abhishek Yadav</li>
+                        <li><b>Mobile :</b>&nbsp;7275XXXX04</li>
+                        <li><b>Email :</b>&nbsp;abhisheky12@gmail.com</li>
+                        <li><b>DOB :</b>&nbsp;22-03-2004</li>
+                        <li><b>Gender :</b>&nbsp;Male</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="section 2">
+                <div class="hline">
+                    <h2>Career Objective</h2>
+                    <div class="line"></div>
+                    <p>Dedicated and hardworking BCA student seeking an opportunity to begin my career in web
+                        development while continuously learning and improving my technical skills. Seeking a position
+                        that will utilize my talent to enhance the growth of the organization.</p>
+                </div>
+            </div>
+            <div class="section 3">
+                <div class="hline">
+                    <h2>Educational Qualifications</h2>
+                    <div class="line"></div>
+                    <ul>
+                        <li><b>Bachelor in Computer Applications</b></li>
+                        <li><b>Senior Secondary Examination </b></li>
+                        <li><b>Higher Schools</b></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="section 4">
+                <div class="hline">
+                    <h2>Skills</h2>
+                    <div class="line"></div>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>React.js</li>
+                        <li>Git & GitHub</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section 5">
+                <div class="hline">
+                    <h2>Project Details</h2>
+                    <div class="line"></div>
+                    <ul>
+                        <li>Portfolio Web</li>
+                        <li>ToDo App</li>
+                        <li>Music Player</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+    <div class="btn-container">
+        <a href="download resume .html" target="_self" download="btn" class="btn">Click to Download the Resume</a>
+    </div>
+</body>
+
+</html>

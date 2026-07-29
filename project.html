@@ -92,17 +92,29 @@
             border: 2px solid rgb(54, 145, 224);
             border-radius: 20px;
             background-color: black;
-            color: rgb(255, 255, 255);
+            /* color: rgb(246, 241, 241); */
             cursor: pointer;
             position: relative;
             top: 18vh;
+
         }
 
-        .btn:hover {
+        .btn a {
+            text-decoration: none;
+            color: rgb(246, 241, 241);
+           
+        }
+
+        .btn a:hover {
+          
+            transition: all 0.3s ease;
+        }
+
+        /*.btn a:hover {
             color: aliceblue;
             background-color: rgb(62, 6, 95);
             transition: all 0.3s ease;
-        }
+        } */
     </style>
 </head>
 
@@ -119,7 +131,7 @@
                     </i></p>
             </div>
 
-            <button class="btn">Read More</button>
+            <button class="btn"><a href="/">Read More</a></button>
 
 
         </div>
@@ -131,7 +143,7 @@
                         an easy-to-use interface.
                     </i></p>
             </div>
-            <button class="btn">Read More</button>
+            <button class="btn"><a href="">Read More</a></button>
 
         </div>
         <div class="box">
@@ -142,7 +154,7 @@
                         tasks. Users can add new tasks, .
                     </i></p>
             </div>
-            <button class="btn">Read More</button>
+            <button class="btn"><a href="">Read More</a></button>button>
 
         </div>
     </div>

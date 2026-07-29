@@ -11,9 +11,11 @@
             padding: 0;
         }
 
+
         html {
             scroll-behavior: smooth;
         }
+
 
         body {
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -37,26 +39,24 @@
         nav ul {
             display: flex;
             justify-content: center;
-
         }
+
 
         nav ul li {
             list-style: none;
             margin: 0 23px;
-
         }
+
 
         nav ul li a {
             text-decoration: none;
             color: white;
-
         }
 
-        nav ul li a:hover {
 
+        nav ul li a:hover {
             color: rgb(13, 122, 218);
             font-size: 0.9rem;
-
         }
 
 
@@ -64,72 +64,77 @@
             font-size: 24px;
         }
 
+
         .right {
             font-size: 2rex;
         }
+
 
         .firstSection {
             display: flex;
             justify-content: space-around;
             align-items: center;
             margin: 80px 0;
-
         }
+
 
         .firstSection>div {
             width: 30%;
-
-
         }
+
 
         .leftSection {
-            /* background-color: red; */
             font-size: 4.8rex;
-            /* width: 50%; */
             margin: 90px 0;
         }
+
 
         .leftSection .buttons {
             padding: 33px 0;
         }
 
+
         .leftSection .btn {
             background-color: rgb(13, 3, 59);
             border: 2px solid rgb(216, 216, 218);
-            color: white;
             width: 200px;
             padding: 7px;
             font-size: small;
             cursor: pointer;
-
         }
 
-        .leftSection .btn:hover {
-            font-size: small;
-            background-color: white;
-            color: rgb(34, 0, 135);
 
+        .leftSection .btn a {
+            color: white;
+            text-decoration: none;
+        }
+
+
+        .leftSection .btn a:hover {
+            color: blue;
         }
 
 
         .rightSection img {
-            /* background-color: red; */
             width: 80%;
             margin: 4px 0;
-
         }
+
 
         .purple {
             color: rgb(6, 6, 236);
         }
 
+
         .text-grey {
             color: grey;
         }
 
+
         #element {
             color: rgb(6, 6, 236);
         }
+
 
         .secondSection {
             max-width: 80vw;
@@ -137,10 +142,12 @@
             height: 60vh;
         }
 
+
         .secondSection h1 {
 
             font-size: 1.8rem;
         }
+
 
         main hr {
             border: 0;
@@ -149,6 +156,7 @@
             margin: 40px 80px;
         }
 
+
         .secondSection .box {
             background-color: white;
             width: 80vw;
@@ -156,6 +164,7 @@
             margin: 15vh 0;
             display: flex;
         }
+
 
         .secondSection .vertical {
 
@@ -167,6 +176,7 @@
             display: flex;
         }
 
+
         .vertical-title {
             position: relative;
             top: 75px;
@@ -174,8 +184,8 @@
             width: 60px;
             display: flex;
             font-family: 'Times New Roman', Times, serif;
-
         }
+
 
         /* .vertical-desc {
 
@@ -195,11 +205,9 @@
 
         }
 
+
         footer {
             background-color: rgb(14, 14, 75);
-
-
-
         }
 
         .footer {
@@ -210,13 +218,16 @@
             height: 60px;
         }
 
+
         .footer ul {
             list-style: none;
         }
 
+
         .footer>div {
             width: 195px;
         }
+
 
         footer .footer-rights {
             text-align: center;
@@ -224,36 +235,39 @@
             padding: 12px 0;
         }
 
+
         .footer-first h3 {
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-size: 20px;
 
         }
 
+
         .footer ul li {
             margin: 30px 0;
             padding: 0 15px;
             font-size: small;
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
         }
+
 
         .footer-first ul li a {
             text-decoration: none;
             color: white;
-
         }
+
 
         .footer-first ul li a:hover {
             color: rgb(13, 122, 218);
             font-size: 0.8rem;
-
         }
+
 
         .footer-second ul li a {
             text-decoration: none;
             color: white;
         }
+
 
         .footer-second ul li a:hover {
 
@@ -261,37 +275,38 @@
             font-size: 0.8rem;
         }
 
+
         .image-insta {
             width: 23px;
             position: relative;
             left: -17px;
             top: 45px;
-
         }
+
 
         .image-tele {
             width: 20px;
             position: relative;
             left: -17px;
             top: 42px;
-
         }
+
 
         .image-linked {
             width: 18px;
             position: relative;
             left: -17px;
             top: 40px;
-
         }
+
 
         .image-locater {
             width: 25px;
             position: relative;
             left: -17px;
             top: 45px;
-
         }
+
 
         @media screen and (max-width: 1400px) {
             /* body {
@@ -320,8 +335,6 @@
                 flex-direction: column;
             }
 
-
-
             .firstSection {
                 flex-direction: column-reverse;
             }
@@ -333,14 +346,15 @@
                 justify-content: center;
                 align-items: center;
                 align-content: center;
-
             }
+
 
             .rightSection {
                 width: 721px !important;
                 display: flex;
                 justify-content: center;
             }
+
 
             .secondSection {
                 /* max-width: 80vw;
@@ -351,12 +365,14 @@
                 align-items: center;
             }
 
+
             .rightSection img {
                 width: 25%;
                 margin-bottom: 70px;
                 position: relative;
                 left: 1vh;
             }
+
 
             .image-top {
                 top: 50px;
@@ -377,7 +393,7 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="skill.html">Skills</a></li>
                     <li><a href="project.html">Projects</a></li>
-                    <li><a href="contact.html">Resume</a></li>
+                    <li><a href="resume.html">View Resume</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
 
                 </ul>
@@ -392,8 +408,8 @@
                 <div>passionate to be a</div>
                 <span id="element"></span>
                 <div class="buttons">
-                    <button class="btn">Download Resume</button>
-                    <button class="btn">Visit Github</button>
+                    <button class="btn"><a href="download resume .html">Download Resume</a></button>
+                    <button class="btn"><a href="/">Get code on Github</a></button>
                 </div>
 
             </div>
