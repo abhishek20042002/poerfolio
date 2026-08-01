@@ -57,7 +57,7 @@
 
 
         .box img {
-            border-radius: 15px;
+            border-radius: 30px;
             width: 40vh;
             height: 30vh;
             object-fit: cover;
@@ -88,33 +88,41 @@
         .btn {
             margin: -1px 18px;
             padding: 12px;
-            font-size: xx-small;
+            font-size: x-small;
             border: 2px solid rgb(54, 145, 224);
             border-radius: 20px;
             background-color: black;
-            /* color: rgb(246, 241, 241); */
             cursor: pointer;
             position: relative;
             top: 18vh;
-
         }
+
+
+        .btn:hover {
+            transition: all 0.3s ease-in;
+            font-size: small;
+        }
+
 
         .btn a {
             text-decoration: none;
             color: rgb(246, 241, 241);
-           
         }
 
         .btn a:hover {
-          
             transition: all 0.3s ease;
         }
 
-        /*.btn a:hover {
-            color: aliceblue;
-            background-color: rgb(62, 6, 95);
-            transition: all 0.3s ease;
-        } */
+
+        @media screen and (max-width:800px) {
+
+
+            .container {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+        }
     </style>
 </head>
 
@@ -131,7 +139,7 @@
                     </i></p>
             </div>
 
-            <button class="btn"><a href="/">Read More</a></button>
+            <button class="btn"><a href="/">Visit Page</a></button>
 
 
         </div>
@@ -143,7 +151,7 @@
                         an easy-to-use interface.
                     </i></p>
             </div>
-            <button class="btn"><a href="">Read More</a></button>
+            <button class="btn"><a href="https://abhishek20042002.github.io/Music-App/">Visit Page</a></button>
 
         </div>
         <div class="box">
@@ -154,7 +162,7 @@
                         tasks. Users can add new tasks, .
                     </i></p>
             </div>
-            <button class="btn"><a href="">Read More</a></button>button>
+            <button class="btn"><a href="https://abhishek20042002.github.io/ToDo-App/">Visit Page</a></button>
 
         </div>
     </div>
